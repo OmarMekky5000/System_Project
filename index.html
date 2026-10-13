@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio - Home</title>
+    <link rel="stylesheet" href="css/Stylesheet.css">
+</head>
+<body>
+    <header class="site-header">
+      <a class="logo" href="index.html">Studio</a>
+      <nav>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="components.html">Components</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="hero">
+        <h1>Build clean layouts with Flexbox and Grid</h1>
+        <p>This homepage uses Flexbox for the navigation and CSS Grid for the main content. Resize the window to see it switch to a single column.</p>
+        <div class="actions">
+          <a class="btn" href="components.html">View components</a>
+          <a class="btn btn-outline" href="#about">Learn more</a>
+        </div>
+      </section>
+
+      <main class="grid">
+        <article class="card">
+          <h3>Flexible navigation</h3>
+          <p>The header is a flex container. The logo and links are pushed apart with justify-content.</p>
+        </article>
+        <article class="card">
+          <h3>Grid content</h3>
+          <p>Cards sit in three equal columns on desktop. The gap property handles all the spacing.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive Breakpoints</h3>
+          <p>2 columns on tablet (768px) and 3 columns on desktop (1024px).</p>
+        </article>
+        <section class="card wide" id="about">
+          <h2>About this page</h2>
+          <p>This wide card spans every column. All colors, the radius and the spacing come from CSS variables defined once on :root.</p>
+        </section>
+        <section class="card wide" id="contact">
+          <h2>Contact</h2>
+          <p>Questions about the lab? Send us a message.</p>
+          <a class="btn" href="mailto:ta@example.com">Email the TA</a>
+          <br><br>
+          <input type="checkbox" id="modal-toggle" class="modal-toggle">
+          <label for="modal-toggle" class="btn">Open Modal (CSS Only)</label>
+        </section>
+      </main>
+    </div>
+
+    <!-- Modal Window -->
+    <div class="modal">
+      <div class="modal-content">
+        <label for="modal-toggle" class="close-btn" aria-label="Close modal">&times;</label>
+        <h3>Modal Window</h3>
+        <p>This modal is built using CSS only (no JavaScript) with the checkbox hack.</p>
+        <br>
+        <label for="modal-toggle" class="btn">Close</label>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">In-Lab Practice (Studio)</div>
+    </footer>
+</body>
+</html>
